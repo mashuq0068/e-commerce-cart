@@ -8,7 +8,7 @@
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
 - [Dev Dependencies](#dev-dependencies)
-- [Deployment](#)(#deployment)
+- [Deployment](#deployment)
 
 ## Project Overview
 
