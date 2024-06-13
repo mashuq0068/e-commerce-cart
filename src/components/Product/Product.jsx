@@ -5,7 +5,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 const Product = ({ product }) => {
   const { name, price, image } = product;
   return (
-    <div className="max-w-sm flex flex-col items-center justify-between rounded-xl drop-shadow-xl  overflow-hidden shadow-xl hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-white">
+    <div className=" flex flex-col justify-between rounded-xl drop-shadow-xl  overflow-hidden shadow-xl hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-white">
       <div>
         <div className=" w-[100%] h-[200px] overflow-hidden">
           <img
