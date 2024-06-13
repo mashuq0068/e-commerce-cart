@@ -1,15 +1,21 @@
 import { IoSearchOutline } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { getSearchedText } from "../../Redux/slices/searchSlice";
 const Navbar = () => {
+  const dispatch = useDispatch();
+  // handle search
   const handleSearch = (e) => {
     e.preventDefault();
     const searchedText = e.target.search.value;
-    console.log(searchedText);
+    dispatch(getSearchedText(searchedText));
   };
   return (
     <div className=" w-full flex md:flex-row flex-col items-center justify-between bg-gray-300 shadow-lg drop-shadow-md px-[3%] py-[4%] md:px-[1%] md:py-[1%]">
+      {/* logo text */}
       <h3 className="uppercase   text-green-600 font-bold text-base md:text-xl">
         E-commerce
       </h3>
+      {/* search bar */}
       <form
         onSubmit={handleSearch}
         className="flex  md:mt-0 mt-3  md:w-auto w-full"

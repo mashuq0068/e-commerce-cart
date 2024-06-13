@@ -7,6 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Product = ({ product }) => {
   const { name, price, image, id } = product;
+  //  cart products from redux store
   const cartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const data = {
@@ -15,7 +16,9 @@ const Product = ({ product }) => {
     price,
     quantity: 1,
   };
+  // add product to cart
   const handleAddToCart = async () => {
+    // is product already added in cart
     const isProductAlreadyExist = await cartProducts.find(
       (product) => product?.id === data?.id
     );
@@ -29,13 +32,15 @@ const Product = ({ product }) => {
   };
   return (
     <>
-    <Toaster className=' shadow-none'/>
+    {/* tooster from react-hot-toast */}
+    <Toaster/>
     <div className=" flex flex-col justify-between rounded-xl drop-shadow-xl  overflow-hidden shadow-xl hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-gray-300">
       <div>
         <div className=" w-[100%] h-[200px] overflow-hidden">
           <img
             className="w-full h-full object-cover origin-center"
             src={image}
+            alt={name}
           />
         </div>
         <div className="px-6 py-4">

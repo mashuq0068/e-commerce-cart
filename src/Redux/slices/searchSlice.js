@@ -4,8 +4,9 @@ const searchSlice = createSlice({
   name: "searchSlice",
   initialState: "",
   reducers: {
+    // get searched test
     getSearchedText(state, action) {
-      state = action?.payload;
+      return action.payload;
     },
   },
 });

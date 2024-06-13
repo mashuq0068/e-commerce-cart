@@ -10,31 +10,66 @@ import { FaPlus } from "react-icons/fa6";
 import { FiMinus } from "react-icons/fi";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { MdAttachMoney } from "react-icons/md";
+import Swal from "sweetalert2";
 
 const Cart = () => {
+  // cart products from redux store
   const cartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  //   delete product
   const handleDeleteProductFromCart = (key) => {
     dispatch(removeProduct(key));
   };
+  //   increase quantity
   const handleIncreaseQuantity = (key) => {
     dispatch(increaseQuantity(key));
   };
+  //   decrease quantity
   const handleDecreaseQuantity = (key) => {
     if (cartProducts[key]?.quantity === 1) {
       return dispatch(removeProduct(key));
     }
     dispatch(decreaseQuantity(key));
   };
+  //   cancel order
   const handleCancelOrder = () => {
-    dispatch(removeAllProducts())
-  }
+    dispatch(removeAllProducts());
+  };
+  //   handle purchase
+  const handlePurchase = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You want to purchase all products!",
+      icon: "info",
+      showCancelButton: true,
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Purchase all",
+      confirmButtonColor: "#16A34A",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // if conformed all cart products will be removed
+        dispatch(removeAllProducts());
+        Swal.fire({
+          title: "Congratulations!",
+          text: "You successfully purchased your ordered products",
+          icon: "success",
+          confirmButtonColor: "#16A34A",
+        });
+      }
+    });
+  };
+//   total price of cart products
   const totalAmount = cartProducts.reduce(
     (accumulator, product) => accumulator + product?.price * product?.quantity,
     0
   );
   return (
-    <div className="overflow-x-auto mt-8 lg:mt-14   drop-shadow-lg shadow-lg shadow-black rounded-lg lg:w-max mx-auto">
+    <div
+      className={`overflow-x-auto ${
+        cartProducts.length > 0 ? "mt-8 lg:mt-14" : "mt-0"
+      }   drop-shadow-lg shadow-lg shadow-black rounded-lg lg:w-max mx-auto`}
+    >
+        {/* cart */}
       {cartProducts.length > 0 && (
         <table className=" table  custom-table  bg-gray-300">
           {/* head */}
@@ -88,12 +123,18 @@ const Cart = () => {
                 </span>
               </td>
               <td className="font-normal text-green-600">
-                <button onClick={handleCancelOrder} className="px-3 py-2 flex gap-0.5 items-center rounded-md bg-green-600 font-normal hover:bg-green-700 text-white">
+                <button
+                  onClick={handleCancelOrder}
+                  className="px-3 py-2 flex gap-0.5 items-center rounded-md bg-green-600 font-normal hover:bg-green-700 text-white"
+                >
                   Cancel Order
                 </button>
               </td>
               <td className=" flex gap-2 justify-end">
-                <button className="px-3 py-2 flex gap-0.5 items-center rounded-md bg-green-600 font-normal hover:bg-green-700 text-white">
+                <button
+                  onClick={handlePurchase}
+                  className="px-3 py-2 flex gap-0.5 items-center rounded-md bg-green-600 font-normal hover:bg-green-700 text-white"
+                >
                   <MdAttachMoney className=" text-lg" />
                   Purchase
                 </button>
