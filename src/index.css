@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,13 @@
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.gradient-text {
+  background: linear-gradient(to right, #4ade80, #16a34a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

@@ -1,0 +1,145 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Premium Headphones",
+        "price": 129.99,
+        "description": "High-quality headphones with noise cancellation feature.",
+        "category": "Electronics"
+      },
+      {
+        "id": 2,
+        "name": "Smartphone XZ-10",
+        "price": 599.99,
+        "description": "Latest smartphone with advanced camera and performance.",
+        "category": "Electronics"
+      },
+      {
+        "id": 3,
+        "name": "Fitness Tracker Watch",
+        "price": 79.99,
+        "description": "Waterproof fitness tracker with heart rate monitor.",
+        "category": "Wearable Tech"
+      },
+      {
+        "id": 4,
+        "name": "Men's Classic Leather Belt",
+        "price": 39.99,
+        "description": "Genuine leather belt for men, available in various sizes and colors.",
+        "category": "Fashion"
+      },
+      {
+        "id": 5,
+        "name": "Women's Running Shoes",
+        "price": 89.99,
+        "description": "Lightweight and durable running shoes for women.",
+        "category": "Footwear"
+      },
+      {
+        "id": 6,
+        "name": "Wireless Bluetooth Speaker",
+        "price": 69.99,
+        "description": "Portable speaker with excellent sound quality and long battery life.",
+        "category": "Electronics"
+      },
+      {
+        "id": 7,
+        "name": "Kitchen Knife Set",
+        "price": 49.99,
+        "description": "Premium stainless steel knife set for kitchen use.",
+        "category": "Kitchenware"
+      },
+      {
+        "id": 8,
+        "name": "HD Webcam",
+        "price": 59.99,
+        "description": "High-definition webcam for video conferencing and streaming.",
+        "category": "Electronics"
+      },
+      {
+        "id": 9,
+        "name": "Children's Educational Toy Set",
+        "price": 29.99,
+        "description": "Interactive and educational toy set for toddlers and young children.",
+        "category": "Toys & Games"
+      },
+      {
+        "id": 10,
+        "name": "Portable Power Bank",
+        "price": 34.99,
+        "description": "Compact power bank with fast charging capability.",
+        "category": "Electronics"
+      },
+      {
+        "id": 11,
+        "name": "Men's Sports Watch",
+        "price": 119.99,
+        "description": "Water-resistant sports watch with stopwatch and timer features.",
+        "category": "Wearable Tech"
+      },
+      {
+        "id": 12,
+        "name": "Leather Messenger Bag",
+        "price": 149.99,
+        "description": "Stylish leather messenger bag with multiple compartments.",
+        "category": "Fashion"
+      },
+      {
+        "id": 13,
+        "name": "Yoga Mat",
+        "price": 29.99,
+        "description": "Non-slip yoga mat for comfortable workouts.",
+        "category": "Fitness & Sports"
+      },
+      {
+        "id": 14,
+        "name": "Gaming Mouse",
+        "price": 49.99,
+        "description": "High-precision gaming mouse with customizable buttons and RGB lighting.",
+        "category": "Electronics"
+      },
+      {
+        "id": 15,
+        "name": "Women's Casual Backpack",
+        "price": 79.99,
+        "description": "Versatile and spacious backpack for daily use.",
+        "category": "Fashion"
+      },
+      {
+        "id": 16,
+        "name": "Digital Alarm Clock",
+        "price": 19.99,
+        "description": "Simple yet effective digital alarm clock with snooze function.",
+        "category": "Home Essentials"
+      },
+      {
+        "id": 17,
+        "name": "Stainless Steel Water Bottle",
+        "price": 24.99,
+        "description": "Reusable water bottle made from durable stainless steel.",
+        "category": "Fitness & Sports"
+      },
+      {
+        "id": 18,
+        "name": "Portable External Hard Drive",
+        "price": 99.99,
+        "description": "High-capacity external hard drive for secure data storage.",
+        "category": "Electronics"
+      },
+      {
+        "id": 19,
+        "name": "Camping Tent",
+        "price": 149.99,
+        "description": "Spacious camping tent with weather-resistant materials.",
+        "category": "Outdoor Gear"
+      },
+      {
+        "id": 20,
+        "name": "Wireless Charging Pad",
+        "price": 29.99,
+        "description": "Fast wireless charging pad compatible with Qi-enabled devices.",
+        "category": "Electronics"
+      }
+    ]
+  }
+  
