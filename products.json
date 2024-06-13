@@ -5,140 +5,160 @@
         "name": "Premium Headphones",
         "price": 129.99,
         "description": "High-quality headphones with noise cancellation feature.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image":"./public/images/headphone.jpeg"
       },
       {
         "id": 2,
         "name": "Smartphone XZ-10",
         "price": 599.99,
         "description": "Latest smartphone with advanced camera and performance.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 3,
         "name": "Fitness Tracker Watch",
         "price": 79.99,
         "description": "Waterproof fitness tracker with heart rate monitor.",
-        "category": "Wearable Tech"
+        "category": "Electronics",
+        "image": "../public/images/fitness-watch.jpeg"
       },
       {
         "id": 4,
         "name": "Men's Classic Leather Belt",
         "price": 39.99,
         "description": "Genuine leather belt for men, available in various sizes and colors.",
-        "category": "Fashion"
+        "category": "Fashion",
+        "image": "../public/images/men's-leather-belts.jpeg"
       },
       {
         "id": 5,
         "name": "Women's Running Shoes",
         "price": 89.99,
         "description": "Lightweight and durable running shoes for women.",
-        "category": "Footwear"
+        "category": "Footwear",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 6,
         "name": "Wireless Bluetooth Speaker",
         "price": 69.99,
         "description": "Portable speaker with excellent sound quality and long battery life.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 7,
         "name": "Kitchen Knife Set",
         "price": 49.99,
         "description": "Premium stainless steel knife set for kitchen use.",
-        "category": "Kitchenware"
+        "category": "Kitchenware",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 8,
         "name": "HD Webcam",
         "price": 59.99,
         "description": "High-definition webcam for video conferencing and streaming.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 9,
         "name": "Children's Educational Toy Set",
         "price": 29.99,
         "description": "Interactive and educational toy set for toddlers and young children.",
-        "category": "Toys & Games"
+        "category": "Toys & Games",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 10,
         "name": "Portable Power Bank",
         "price": 34.99,
         "description": "Compact power bank with fast charging capability.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 11,
         "name": "Men's Sports Watch",
         "price": 119.99,
         "description": "Water-resistant sports watch with stopwatch and timer features.",
-        "category": "Wearable Tech"
+        "category": "Wearable Tech",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 12,
         "name": "Leather Messenger Bag",
         "price": 149.99,
         "description": "Stylish leather messenger bag with multiple compartments.",
-        "category": "Fashion"
+        "category": "Fashion",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 13,
         "name": "Yoga Mat",
         "price": 29.99,
         "description": "Non-slip yoga mat for comfortable workouts.",
-        "category": "Fitness & Sports"
+        "category": "Fitness & Sports",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 14,
         "name": "Gaming Mouse",
         "price": 49.99,
         "description": "High-precision gaming mouse with customizable buttons and RGB lighting.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 15,
         "name": "Women's Casual Backpack",
         "price": 79.99,
         "description": "Versatile and spacious backpack for daily use.",
-        "category": "Fashion"
+        "category": "Fashion",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 16,
         "name": "Digital Alarm Clock",
         "price": 19.99,
         "description": "Simple yet effective digital alarm clock with snooze function.",
-        "category": "Home Essentials"
+        "category": "Home Essentials",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 17,
         "name": "Stainless Steel Water Bottle",
         "price": 24.99,
         "description": "Reusable water bottle made from durable stainless steel.",
-        "category": "Fitness & Sports"
+        "category": "Fitness & Sports",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 18,
         "name": "Portable External Hard Drive",
         "price": 99.99,
         "description": "High-capacity external hard drive for secure data storage.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 19,
         "name": "Camping Tent",
         "price": 149.99,
         "description": "Spacious camping tent with weather-resistant materials.",
-        "category": "Outdoor Gear"
+        "category": "Outdoor Gear",
+        "image": "../public/images/smart-phone.jpeg"
       },
       {
         "id": 20,
         "name": "Wireless Charging Pad",
         "price": 29.99,
         "description": "Fast wireless charging pad compatible with Qi-enabled devices.",
-        "category": "Electronics"
+        "category": "Electronics",
+        "image": "../public/images/smart-phone.jpeg"
       }
     ]
   }
