@@ -16,3 +16,12 @@ body {
   background-clip: text;
   color: transparent;
 }
+.table::-webkit-scrollbar {
+  width: 0px;
+  overflow: auto;
+  height: 0px;
+}
+.table {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}

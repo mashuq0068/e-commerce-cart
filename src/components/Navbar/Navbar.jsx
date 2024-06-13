@@ -1,75 +1,33 @@
+import { IoSearchOutline } from "react-icons/io5";
 const Navbar = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const searchedText = e.target.search.value;
+    console.log(searchedText);
+  };
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-            {/* <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li> */}
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
-        </div>
-        <a className="btn uppercase text-green-600 font-bold  text-xl">E-commerce</a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          {/* <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li> */}
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        {/* <a className="btn">Button</a> */}
-      </div>
+    <div className=" w-full flex md:flex-row flex-col items-center justify-between bg-gray-300 shadow-lg drop-shadow-md px-[3%] py-[4%] md:px-[1%] md:py-[1%]">
+      <h3 className="uppercase   text-green-600 font-bold text-base md:text-xl">
+        E-commerce
+      </h3>
+      <form
+        onSubmit={handleSearch}
+        className="flex  md:mt-0 mt-3  md:w-auto w-full"
+      >
+        <input
+          name="search"
+          type="text"
+          placeholder="Search by Product Name"
+          className="input h-[40px]  rounded-r-none focus:outline-none focus:border-green-600   drop-shadow-xl w-full h- md:w-[30vw]"
+        />
+        <button
+          className="middle none cursor-pointer  rounded-l-none   center rounded-lg bg-green-600 md:py-2 py-2 px-6 font-sans  font-semibold capitalize shadow-md shadow-orange-500/20 transition-all hover:shadow-lg n focus:opacity-[0.85] flex items-center gap-1 text-white text-[14px] md:text-base focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          data-ripple-light="true"
+        >
+          <IoSearchOutline />
+          Search
+        </button>
+      </form>
     </div>
   );
 };
