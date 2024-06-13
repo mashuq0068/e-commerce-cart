@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 const Root = () => {
   return (
     <div className="container-wrapper">
-      <header>
+      <header className="mb-8 lg:mb-12">
         <Navbar />
       </header>
       <Outlet />

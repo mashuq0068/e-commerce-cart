@@ -1,11 +1,36 @@
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { addProduct } from "../../Redux/slices/cartSlice";
+import toast, { Toaster } from "react-hot-toast";
 
 const Product = ({ product }) => {
-  const { name, price, image } = product;
+  const { name, price, image, id } = product;
+  const cartProducts = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const data = {
+    id,
+    name,
+    price,
+    quantity: 1,
+  };
+  const handleAddToCart = async () => {
+    const isProductAlreadyExist = await cartProducts.find(
+      (product) => product?.id === data?.id
+    );
+    if (isProductAlreadyExist) {
+      return toast.error("This product already added into cart", {
+        duration: 3000,
+        position: "top-center",
+      });
+    }
+    dispatch(addProduct(data));
+  };
   return (
-    <div className=" flex flex-col justify-between rounded-xl drop-shadow-xl  overflow-hidden shadow-xl hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-white">
+    <>
+    <Toaster className=' shadow-none'/>
+    <div className=" flex flex-col justify-between rounded-xl drop-shadow-xl  overflow-hidden shadow-xl hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-gray-300">
       <div>
         <div className=" w-[100%] h-[200px] overflow-hidden">
           <img
@@ -14,17 +39,21 @@ const Product = ({ product }) => {
           />
         </div>
         <div className="px-6 py-4">
-          <div className="font-medium text-lg mb-2">{name}</div>
-          <p className="text-gray-700 text-base">${price}</p>
+          <div className="font-medium text-base mb-2">{name}</div>
+          <p className="text-green-600 text-base">${price}</p>
         </div>
       </div>
       <div className=" w-full  flex justify-center">
-        <button className=" bg-green-600 flex justify-center items-center gap-2 w-full text-white font-medium py-2 px-4 rounded  transition-colors duration-300">
+        <button
+          onClick={handleAddToCart}
+          className=" bg-green-600 flex justify-center items-center gap-2 w-full text-white font-medium py-2 px-4 rounded  transition-colors duration-300"
+        >
           <MdOutlineShoppingCart className=" text-lg" />
           <p> Add to Cart</p>
         </button>
       </div>
     </div>
+    </>
   );
 };
 Product.propTypes = {
