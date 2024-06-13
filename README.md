@@ -23,32 +23,32 @@ git clone https://github.com/mashuq0068/e-commerce-cart.git
 cd e-commerce-cart
 npm install
 ```
-# Usage
+## Usage
 
-## To run the application in development mode:
+### To run the application in development mode:
 
 ```bash
 npm run dev
 ```
-## To build the application for production:
+### To build the application for production:
 
 ```bash
 npm run build
 ```
-## To preview the built application:
+### To preview the built application:
 
 ```bash
 npm run preview
 
 ```
-# Scripts
+## Scripts
 
 - `npm run dev`: Start the development server using Vite.
 - `npm run build`: Build the application for production.
 - `npm run lint`: Lint the code using ESLint.
 - `npm run preview`: Preview the built application.
 
-# Dependencies
+## Dependencies
 
 - `@reduxjs/toolkit`: ^2.2.5
 - `axios`: ^1.7.2
@@ -61,7 +61,7 @@ npm run preview
 - `react-router-dom`: ^6.23.1
 - `sweetalert2`: ^11.11.1
 
-# Dev Dependencies
+## Dev Dependencies
 
 - `@types/react`: ^18.2.66
 - `@types/react-dom`: ^18.2.22
@@ -76,5 +76,5 @@ npm run preview
 - `tailwindcss`: ^3.4.4
 - `vite`: ^5.2.0
 
-# Deployment
+## Deployment
 Live link: [Website Live Link](https://e-commerce-cart-olive.vercel.app/)
